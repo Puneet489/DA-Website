@@ -46,7 +46,7 @@
     text-align: right;
     justify-content: center;
     padding-right: 25px;
-    
+
 
 }
 
@@ -71,14 +71,15 @@
 }
 
 .background{
-    background: rgba(0, 0, 0, 0.7) url(../img/painted-background-multicoloured-palette_23-2148427592.webp);
+    background: rgba(0, 0, 0, 0.7) url(../img/image3.jpeg);
     background-size: cover;
+    background-repeat: repeat-y;
     background-blend-mode: darken;
 
 }
 
 .firstsection{
-    height: 100vh;
+    height: 75vh;
 }
 
 .box-main {
@@ -86,9 +87,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    max-width: 50%;
+    max-width: 80%;
     margin: auto;
     height: 60%;
+    padding-top: 50px;
 }
 
 .firsthalf{
@@ -96,7 +98,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 309%;
+    width: 100%;
 
 }
 
@@ -145,4 +147,23 @@
 
 .para{
     padding-top: 10px;
+} 
+
+.contentsection{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.contentsection img{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.content{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
