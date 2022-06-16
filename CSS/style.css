@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: grey; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-list li{
+
+    list-style: none;
+    padding:24px 25px;
+
+}
+
+.nav-list li a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-list li a:hover{
+
+    text-decoration: none;
+    color: green;
+
+}
+
+.rightnav{
+    width: 50%;
+    /* background-color: grey; */
+    text-align: right;
+    justify-content: center;
+    padding-right: 25px;
+    
+
+}
+
+.logo{
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 33%;
+    border: 3px solid red;
+    border-radius: 50px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(../img/painted-background-multicoloured-palette_23-2148427592.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 60%;
+}
+
+.firsthalf{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 309%;
+
+}
+
+.secondhalf img{
+    width:70%;
+    border:3px solid white;
+    border-radius:150px;
+    display:block;
+    margin:auto;
+}
+
+.text-big{
+    font-size: 35px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px;
+    margin: 7px 0;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 5px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding:5px;
+    margin: 7px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 16px;
+    background:none;
+    color: white;
+    cursor: pointer;
+}
+
+.find{
+    background:none;
+}
+
+.para{
+    padding-top: 10px;
+}
