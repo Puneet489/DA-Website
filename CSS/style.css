@@ -210,19 +210,38 @@ html{
     margin: 5px 5px;
 }
 
-.form{
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    font-size: 12px;
+    padding: 8px;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.form{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    margin: 10px;
 }
 
-.form p{
-    padding:10px;
+.form input{
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    width: 350px;
+    background: none;
+    color: white;
+}
+
+.form input comment{
+    height: 70px;
+}
+
+::placeholder{
+    color: rgb(168, 168, 168);
 }
 
 
