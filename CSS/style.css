@@ -244,6 +244,55 @@ html{
     color: rgb(168, 168, 168);
 }
 
+.payment{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    height: 80vh;
+}
+
+.amount{
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.amount input{
+    margin-left: 10px;
+    width: 250px;
+    background:none;
+    /* height: ; */
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+
+.paymentbtn{
+    display: flex;
+}
+
+.paymentbtn button{
+    /* padding: 7px;
+    margin: 10px; */
+    width: 80px;
+    /* background: none;
+    border: 3px solid white; */
+}
+
+.paypal{
+    margin: 15px;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
 
 @media only screen and (max-width: 1040px) {
     .burger{

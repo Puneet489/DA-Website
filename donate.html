@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/image4.webp">
+    <title>Donate</title>
+</head>
+
+<body>
+
+</body>
+<nav class="navbar background h-nav">
+    <ul class="nav-list v-class">
+        <div class="logo"><img src=img/image4.webp alt="logo"></div>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#Explore">EXPLORE</a></li>
+        <li><a href="donate.html">DONATE</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="rightnav v-class">
+        <input class="find" type="text" name="search" id="search">
+        <button class="btn-sm">Search</button>
+    </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+</nav>
+
+<section class="payment background">
+    <h1>Thank You for choosing to help us</h1>
+    <div class="amount">
+        <p>Donation Amount</p>
+        <input type="number" name="amount" id="amount" placeholder="Amount">
+    </div>
+    <div class="paymentbtn">
+        <button class="btn-sm" id="amount500" onclick="change500()">500</button>
+        <button class="btn-sm" id="amount1000" onclick="change1000()">1000</button>
+        <button class="btn-sm" id="amount10000" onclick="change10000()">10000</button>
+    </div>
+    <button class="paypal">
+        <div id="pp"></div>
+    </button>
+</section>
+
+<footer class="background">
+    <p class="text-footer">Copyright &copy; 2022 DA WEBSITE ALL RIGHTS RESERVED</p>
+</footer>
+
+<script src="js/responsive.js"></script>
+<script
+    src="https://www.paypal.com/sdk/js?client-id=AYDTgQA1psTQ0nKOrzVQz5mQ8WKTdrFwHfG6QQkoU0-rLfI1ttrIEOrQoLQSKtJ66Q02E7awU4s3jfDf&components=buttons"></script>
+
+<script>paypal.Buttons().render('#pp');</script>
+
+</body>
+
+</html>
