@@ -39,11 +39,65 @@
             <input type="text" name="comment" id="comment" placeholder="Comment">
         </div>
 
+        <button class="btn" id="submit">SUBMIT</button>
+
     </section>
     <footer class="background">
         <p class="text-footer">Copyright &copy; 2022 DA WEBSITE ALL RIGHTS RESERVED</p>
     </footer>
     <script src="js/responsive.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+        import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyB3iYnM3G_qTZ4b01z30vsn3BVu79bg_4w",
+            authDomain: "da-website-57f91.firebaseapp.com",
+            projectId: "da-website-57f91",
+            storageBucket: "da-website-57f91.appspot.com",
+            messagingSenderId: "531732739172",
+            appId: "1:531732739172:web:f188308a6708a8e4c29b71",
+            measurementId: "G-4VC84CWQW7"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        const db = getDatabase();
+
+        var name = document.getElementById("name");
+        var email = document.getElementById('email');
+        var comment = document.getElementById('comment');
+        var number = document.getElementById('number');
+        var submit = document.getElementById("submit")
+
+        function InsertData() {
+            set(ref(db, email.value), {
+                name: name.value,
+                msg: comment.value,
+                email: email.value,
+                number: number.value
+            })
+                .then(() => {
+                    alert("We will get back to you shortly");
+                })
+                .catch((error) => {
+                    alert("unsuccessful");
+                })
+        }
+
+        submit.addEventListener('click', InsertData);
+
+    </script>
+
 </body>
 
 </html>
